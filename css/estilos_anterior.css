@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    grid-area: header;
+    position: sticky;
+    top: 0%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    .padreLogo{
+        width: 28%;
+        margin-left: 30px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .navegacion{
+        width: 68%;
+
+        .listaNav{
+            list-style: none;
+            display: flex;
+
+            .listaItem{
+                margin-right: 20px;
+
+                .linkNav{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    &:hover{
+                        color: rgb(199, 211, 29);
+                        border-bottom: 1px solid rgb(199, 211, 29);
+                    }
+    }
+}
+
+
+        }
+    }
+
+}
+.mainIndex{
+    .seccionTitulo{
+        padding-left: 100px;
+        padding-top: 50px;
+        display: block;
+        color: rgb(255, 255, 255);
+        line-height: 1.5;
+        background-image: url(../assets/img/header.jpg);
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        height: 50vh;
+        }
+}
+
+.titulos{
+    text-align: center;
+        font-size: 2rem;
+        padding-top: 20px;
+}
+
+.textoBlanco{
+    color: white;
+    text-align: center;
+}
+
+.parrafos{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.tarjetas{
+    display: inline-table;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(0, 0, 0);
+            border: 1px solid black;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            padding-left: 15px;
+            padding-right: 20px;
+            margin: 20px;
+}
+
+.tituloPrincipal{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 100px;
+    }
+
+    .parrafoTituloPrincipal{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+.seccionPacks{
+    width: 90%;
+    margin: 0 auto; /*centra el elemento*/
+    text-align: center;
+}
+
+.textoParrafoPack{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.linkVerMas{
+    box-sizing: content-box;
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            width: 80px;
+            color: black;
+            text-decoration: none;
+            border:1px solid rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+}
+
+.seccionNosotrosIndex{
+    .tituloSeccionNosotrosIndex{
+        text-align: left;
+        font-size: 2rem;
+        padding-top: 100px;
+        padding-left: 200px;
+    }
+}
+
+.textoParrafoSeccionNosotros{
+    text-align: left;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    padding-left: 200px;
+
+}
+
+.imagenSeccionNosotrosIndex{
+    width: 700px;    
+}
+
+.footer{
+    padding: 50px;
+    grid-area: footer;
+    background-color: rgb(37, 37, 37);
+
+    p{
+        margin-top: 30px;
+        color: white;
+    }
+
+    .contenedorFooter{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5px;
+
+    a{
+        color: gray;
+        text-decoration: none;
+        &:hover{
+            color: white;
+        }
+        &:active{
+            color: rgb(199, 211, 29);
+        }
+    }
+
+    h4{
+        color: rgb(199, 211, 29);
+        margin-bottom: 10px;
+    }
+    ul{
+        list-style: none;
+        li{
+            margin-bottom: 10px;
+        }
+    }
+
+    form{
+        display: flex;
+        input [type="email"]{
+            padding: 0 15px;
+            max-width: 100%;
+            width: 100%;
+            height: 42px;
+            border: 2px solid rgba(129, 129, 129,.2);
+            border-radius: 0;
+            background-color: transparent;
+            box-shadow: none;
+            vertical-align: middle;
+            font-size: 14px;
+        }
+    
+        input[type="submit"]{
+            padding: 12px 20px;
+            font-size: 13px;
+            line-height: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            outline: 0;
+            border-width: 0;
+            border-style: solid;
+            border-color: transparent;
+            border-radius: 0;
+            vertical-align: middle;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: .3px;
+            font-weight: 600;
+        }
+    }
+
+    .logoFooter{
+        width: 200px;
+    }
+    }
+    
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.altoSeccion{
+    height: 50vh;
+}
+
+.imgFondo{
+    background-image: url(../assets/img/imagen_seccionnosotrosindex.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.bgNavegacion{
+    background-color: black;
+}
+
+.logo{
+    width: 100px;
+}
+
+.carousel-item{
+    height: 40vh;
+}
+.carousel-item img{
+    height: 150%;
+    object-fit: cover;
+}
+@media screen and (max-width:768px){
+    .carousel-item{
+        height: 50vh;
+    }
+}
