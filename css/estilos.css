@@ -10,15 +10,19 @@ body{
     background-color: rgb(255, 255, 255);
     color: black;
 }
+
+.textoInicio{
+    padding-top: 25px;
+}
+
 .altoSeccion{
-    height: 50vh;
+    padding-top: 6vh;
 }
 
 .imgFondo{
     background-image: url(../assets/img/imagen_seccionnosotrosindex.jpg);
     background-size: cover;
     background-position: center;
-    height: 100%;
 }
 
 .bgNavegacion{
@@ -40,4 +44,22 @@ body{
     .carousel-item{
         height: 50vh;
     }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #272727;
+    border-color: #272727;
+  }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #272727;
+    border-color: #272727;
+  }
+
+.seccionPacksLibres{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 20px;
 }
