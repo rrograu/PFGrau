@@ -42,7 +42,7 @@ body{
 }
 @media screen and (max-width:768px){
     .carousel-item{
-        height: 50vh;
+        height: 30vh;
     }
 }
 
@@ -55,6 +55,11 @@ body{
     color: #fff;
     background-color: #272727;
     border-color: #272727;
+  }
+
+  .tarjetasClasesSueltas{
+    justify-content: center;
+    padding: 50px;
   }
 
 .seccionPacksLibres{
@@ -140,5 +145,4 @@ body{
         width: 200px;
     }
     }
-    
 }
