@@ -1,148 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(255, 255, 255);
-    color: black;
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(to bottom, #3d3d2e, #656640, #909152, #bdc064, #edf076);
+  color: rgb(255, 255, 255);
 }
 
-.textoInicio{
-    padding-top: 25px;
+.bgNavegacion {
+  background-color: black;
+}
+.bgNavegacion .logo {
+  width: 100px;
 }
 
-.altoSeccion{
-    padding-top: 6vh;
+.footer {
+  padding: 50px;
+  grid-area: footer;
+  background-color: #272727;
 }
-
-.imgFondo{
-    background-image: url(../assets/img/imagen_seccionnosotrosindex.jpg);
-    background-size: cover;
-    background-position: center;
+.footer p {
+  margin-top: 30px;
+  color: white;
 }
-
-.bgNavegacion{
-    background-color: black;
+.footer .contenedorFooter {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
 }
-
-.logo{
-    width: 100px;
+.footer .contenedorFooter a {
+  color: gray;
+  text-decoration: none;
 }
-
-.carousel-item{
-    height: 40vh;
+.footer .contenedorFooter a:hover {
+  color: white;
 }
-.carousel-item img{
-    height: 150%;
-    object-fit: cover;
+.footer .contenedorFooter a:active {
+  color: rgb(199, 211, 29);
 }
-@media screen and (max-width:768px){
-    .carousel-item{
-        height: 30vh;
-    }
+.footer .contenedorFooter h4 {
+  color: rgb(199, 211, 29);
+  margin-bottom: 10px;
 }
-
-.btn-primary {
-    color: #fff;
-    background-color: #272727;
-    border-color: #272727;
+.footer .contenedorFooter ul {
+  list-style: none;
+}
+.footer .contenedorFooter ul li {
+  margin-bottom: 10px;
+}
+.footer .contenedorFooter form {
+  display: flex;
+}
+.footer .contenedorFooter form input [type=email] {
+  padding: 0 15px;
+  max-width: 100%;
+  width: 100%;
+  height: 42px;
+  border: 2px solid rgba(129, 129, 129, 0.2);
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.footer .contenedorFooter form input[type=submit] {
+  padding: 12px 20px;
+  font-size: 13px;
+  line-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 0;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+}
+.footer .contenedorFooter .logoFooter {
+  width: 200px;
+}
+@media (max-width: 768px) {
+  .footer .footer {
+    padding: 20px;
   }
-  .btn-primary:hover {
-    color: #fff;
-    background-color: #272727;
-    border-color: #272727;
+  .footer .contenedorFooter {
+    flex-direction: column;
+    align-items: center;
   }
-
-  .tarjetasClasesSueltas{
-    justify-content: center;
-    padding: 50px;
+  .footer .contenedorFooter a {
+    margin-bottom: 10px;
   }
-
-.seccionPacksLibres{
-    padding-top: 50px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 20px;
 }
 
-.footer{
-    padding: 50px;
-    grid-area: footer;
-    background-color: rgb(37, 37, 37);
-
-    p{
-        margin-top: 30px;
-        color: white;
-    }
-
-    .contenedorFooter{
-        display: flex;
-        justify-content: space-evenly;
-        gap: 5px;
-
-    a{
-        color: gray;
-        text-decoration: none;
-        &:hover{
-            color: white;
-        }
-        &:active{
-            color: rgb(199, 211, 29);
-        }
-    }
-
-    h4{
-        color: rgb(199, 211, 29);
-        margin-bottom: 10px;
-    }
-    ul{
-        list-style: none;
-        li{
-            margin-bottom: 10px;
-        }
-    }
-
-    form{
-        display: flex;
-        input [type="email"]{
-            padding: 0 15px;
-            max-width: 100%;
-            width: 100%;
-            height: 42px;
-            border: 2px solid rgba(129, 129, 129,.2);
-            border-radius: 0;
-            background-color: transparent;
-            box-shadow: none;
-            vertical-align: middle;
-            font-size: 14px;
-        }
-    
-        input[type="submit"]{
-            padding: 12px 20px;
-            font-size: 13px;
-            line-height: 18px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            outline: 0;
-            border-width: 0;
-            border-style: solid;
-            border-color: transparent;
-            border-radius: 0;
-            vertical-align: middle;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: .3px;
-            font-weight: 600;
-        }
-    }
-
-    .logoFooter{
-        width: 200px;
-    }
-    }
+.mainIndex .carousel-item {
+  height: 40vh;
 }
+.mainIndex .carousel-item img {
+  height: 150%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .carousel-item {
+    height: 30vh;
+  }
+}
+.mainIndex .textoInicio {
+  padding-top: 25px;
+}
+.mainIndex .textoInicio .carouselImg {
+  -webkit-mask-image: linear-gradient(black 20%, transparent);
+          mask-image: linear-gradient(black 20%, transparent);
+}
+.mainIndex .altoSeccion {
+  padding-top: 6vh;
+}
+.mainIndex .imgFondo {
+  background-image: url(../assets/img/imagen_seccionnosotrosindex.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: linear-gradient(black 50%, transparent);
+          mask-image: linear-gradient(black 50%, transparent);
+  transition: transform 1s ease-in-out;
+}
+.mainIndex .imgFondo:hover {
+  transform: scale(1.1);
+}
+.mainIndex .tarjetasClasesSueltas {
+  justify-content: center;
+  padding: 50px;
+}
+.mainIndex .tarjetasClasesSueltas .btn-primary {
+  color: #000000;
+  background-color: #272727;
+  border-color: #272727;
+}
+.mainIndex .tarjetasClasesSueltas .btn-primary:hover {
+  color: #000000;
+  background-color: #272727;
+  border-color: #272727;
+}
+.mainIndex .seccionPacksLibres {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .mainIndex .tarjetasClasesSueltas {
+    padding: 20px;
+  }
+  .mainIndex .seccionPacksLibres {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

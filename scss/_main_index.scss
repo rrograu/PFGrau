@@ -1,0 +1,63 @@
+.mainIndex{
+    .carousel-item{
+        height: 40vh;
+    }
+    .carousel-item img{
+        height: 150%;
+        object-fit: cover;
+    }
+    @media screen and (max-width:768px){
+        .carousel-item{
+            height: 30vh;
+        }
+    }
+    .textoInicio{
+        padding-top: 25px;
+        .carouselImg{
+            mask-image: linear-gradient(black 20%, transparent);
+        }
+    }
+    .altoSeccion{
+        padding-top: 6vh;
+    }
+    .imgFondo{
+        background-image: url(../assets/img/imagen_seccionnosotrosindex.jpg);
+        background-size: cover;
+        background-position: center;
+        mask-image: linear-gradient(black 50%, transparent);
+        transition: transform 1s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .tarjetasClasesSueltas{
+        justify-content: center;
+        padding: $p-50px;
+        .btn-primary {
+            color: #000000;
+            background-color: $color-prinicpal;
+            border-color: $color-prinicpal;
+          }
+          .btn-primary:hover {
+            color: #000000;
+            background-color: $color-prinicpal;
+            border-color: $color-prinicpal;
+          }
+      }
+      .seccionPacksLibres{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .tarjetasClasesSueltas {
+            padding: $p-20px;
+        }
+    
+        .seccionPacksLibres {
+            padding: $p-20px;
+        }
+    }
+}
