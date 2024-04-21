@@ -30,9 +30,15 @@
             transform: scale(1.1);
         }
     }
+
+    .textoTarjetasIndex{
+        color: black;
+    }
+    
     .tarjetasClasesSueltas{
         justify-content: center;
         padding: $p-50px;
+        color: black;
         .btn-primary {
             color: #000000;
             background-color: $color-prinicpal;
@@ -49,6 +55,9 @@
         padding-bottom: 20px;
         padding-left: 15px;
         padding-right: 20px;
+        .textoPacks{
+            color: black;
+        }
     }
     
     @media (max-width: 768px) {

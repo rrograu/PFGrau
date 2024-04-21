@@ -6,7 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(to bottom, #3d3d2e, #656640, #909152, #bdc064, #edf076);
+  background-color: rgb(27, 27, 27);
   color: rgb(255, 255, 255);
 }
 
@@ -134,9 +134,13 @@ body {
 .mainIndex .imgFondo:hover {
   transform: scale(1.1);
 }
+.mainIndex .textoTarjetasIndex {
+  color: black;
+}
 .mainIndex .tarjetasClasesSueltas {
   justify-content: center;
   padding: 50px;
+  color: black;
 }
 .mainIndex .tarjetasClasesSueltas .btn-primary {
   color: #000000;
@@ -153,6 +157,9 @@ body {
   padding-bottom: 20px;
   padding-left: 15px;
   padding-right: 20px;
+}
+.mainIndex .seccionPacksLibres .textoPacks {
+  color: black;
 }
 @media (max-width: 768px) {
   .mainIndex .tarjetasClasesSueltas {
