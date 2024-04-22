@@ -168,4 +168,11 @@ body {
   .mainIndex .seccionPacksLibres {
     padding: 20px;
   }
+}
+.mainIndex .configEror404 {
+  text-align: center;
+  padding: 50px;
+}
+.mainIndex .configEror404 .titulo404 {
+  color: rgb(199, 211, 29);
 }/*# sourceMappingURL=estilos.css.map */

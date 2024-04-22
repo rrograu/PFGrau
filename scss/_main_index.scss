@@ -69,4 +69,12 @@
             padding: $p-20px;
         }
     }
+
+    .configEror404{
+        text-align: center;
+        padding: 50px;
+        .titulo404{
+            color: $color-secundario;
+        }
+    }
 }
